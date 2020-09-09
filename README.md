@@ -1,2 +1,2 @@
 # TutorialJS
-Exercises and activities to learn JavaScript.
+Practices and activities to learn JavaScript.
