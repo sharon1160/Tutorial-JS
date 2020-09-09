@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        //ALERT : shows a message and waits for the user to press “OK”.
+        alert("Hello");
+
+        //PROMPT : accepts two arguments and returns the text from the input field.
+        let age = prompt("How old are you?", 100);
+        alert(`You are ${age} years old!`);
+
+        let test = prompt("Test");// Not recommended in IE
+
+        let test2 = prompt("Test2", '');// Recommended in IE
+
+        //CONFIRM : returns a boolean.
+        let isBoss = confirm("Are you the boss?");
+        alert(isBoss);// true if OK is pressed
+
+    </script>
+</body>
+</html>
