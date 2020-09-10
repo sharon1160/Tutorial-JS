@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        // NUMERIC CONVERSION, UNARY +
+
+       // No effect on numbers
+        let x = 1;
+        alert( +x ); // 1
+
+        let y = -2;
+        alert( +y ); // -2
+
+        // Converts non-numbers
+        alert( +true ); // 1
+        alert( +"" );   // 0
+
+        // We need to convert and then sum them
+        let apples = "2";
+        let oranges = "3";
+
+        // both values converted to numbers before the binary plus
+        alert( +apples + +oranges ); // 5
+
+        // -------------------------------------------------------- 
+
+        // ASSIGNMENT
+
+        let xx = 2 * 2 + 1;
+        alert( xx ); // 5
+
+        // Assignment = returns a value
+        let a = 1;
+        let b = 2;
+        let c = 3 - (a = b + 1);// returns
+        alert( a ); // 3
+        alert( c ); // 0
+
+        // Chaining Assignments
+        let A, B, C;
+        // evaluate from right to left
+         A = B = C = 2 + 2;
+
+        alert( A ); // 4
+        alert( B ); // 4
+        alert( c ); // 4
+
+    </script>
+</body>
+</html>
