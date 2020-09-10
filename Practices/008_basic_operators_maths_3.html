@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        // Concatenates
+        let s = "my" + "string";
+        alert(s); // mystring
+
+        // if any of the operands is a string, then the other 
+        // one is converted to a string too.
+        alert( '1' + 2 ); // "12"
+        alert( 2 + '1' ); // "21"
+        alert(2 + 2 + '1' ); // "41" and not "221"
+        // The first + sums two numbers, so it returns 4,
+        // then the next + adds the string 1 to it
+
+        // Other arithmetic operators
+        alert( 6 - '2' ); // 4, converts '2' to a number
+        alert( '6' / '2' ); // 3, converts both operands to numbers
+    </script>
+</body>
+</html>
