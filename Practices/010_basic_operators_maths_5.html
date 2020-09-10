@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        // MODIFY-IN-PLACE
+        let n = 2;
+        n += 3; // 5
+        n *= 3; // 15
+
+        let m = 2;
+        m *= 3 + 5;
+        alert( m ); // 16 
+
+        // INCREMENT/DECREMENT
+        let counter = 2;
+        counter++;
+        alert( counter );// 3
+
+        let counter2 = 3;
+        counter2--;
+        alert( counter2 ); // 2
+
+        let counter3 = 5;
+        let a = counter3++;
+        alert( a ); // 5
+
+        let counter4 = 6;
+        let b = ++counter4;
+        alert( b ); // 7
+
+        let counter5 = 2;
+        alert( 2 * ++counter5 ); // 4
+
+        //COMMA
+        let c = (1 + 2, 3 + 4);
+        alert( c ); // 7 (the result of 3 + 4)
+    </script>
+</body>
+</html>
