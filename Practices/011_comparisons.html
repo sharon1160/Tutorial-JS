@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        
+        // BOOLEAN IS THE RESULT
+        let result = 5 > 4; // assign the result of the comparison
+        alert( result ); // true
+
+        // STRING COMPARISON
+        // “dictionary” or “lexicographical” order.
+        alert( 'Z' > 'A' ); // true
+        alert( 'Glow' > 'Glee' ); // true
+        alert( 'Bee' > 'Be' ); // true
+
+
+        // COMPARISON OF DIFFERENT TYPES
+        // JavaScript converts the values to numbers.
+        alert( '2' > 1 ); // true, string '2' becomes a number 2
+        alert( '01' == 1 ); // true, string '01' becomes a number 1
+
+        alert( true == 1 ); // true
+        alert( false == 0 ); // true
+
+
+        // A FUNNY CONSEQUENCE
+        let a = 0;
+        alert(Boolean(a)); // false
+
+        let b = "0";
+        alert(Boolean(b)); // true
+
+        // converts the value to number
+        alert( a == b ) // false
+
+        // converted to numbers by the equality operator ==
+        alert( 0 == false ); // true
+        alert( '' == false ); // true
+
+        // A strict equality operator === checks the equality without type conversion.
+        alert( 0 === false ); // false, because the types are different
+        // There is also a “strict non-equality” operator !==  
+
+
+        // COMPARISON WITH NULL AND UNDEFINED
+        // For a strict equality check ===
+        alert( null === undefined ); // false -- Check if both are the same type  without type conversion
+
+        // For a non-strict check ==
+        alert( null == undefined); // true -- Converts values to numbers
+
+    </script>
+</body>
+</html>
