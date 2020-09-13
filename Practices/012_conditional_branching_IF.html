@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        
+        // THE 'IF' STATEMENT, THE 'ELSE' ,THE 'ELSE IF'
+        let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+        if (year == 2015){
+            alert( "You're right!" );
+            alert( "You're so smart!" );
+        }
+
+        // We can also pass a pre-evaluated 
+        // boolean value to if, like this:
+        let cond = (year == 2015); // equality evaluates to true or false
+        alert( cond ); // boolean value
+        
+        if (year < 2015) {
+            alert( 'Too early...' );
+        } else if (year > 2015) {
+            alert( 'Too late' );
+        } else {
+            alert( 'Exactly!' );
+        }
+
+
+        // CONDITIONAL OPERATOR ‘?’
+        let age = prompt("How old are you ? ", '');
+
+        let accessAllowed = (age > 18) ? true : false;
+        alert( accessAllowed );
+
+        // the same
+        let accessAllowed1 = age > 18;
+        alert( accessAllowed1 );
+
+        // It’s not recommended to use the question mark operator in this way.
+        let message = (age < 3) ? 'Hi, baby!' :
+        (age < 18) ? 'Hello!' :
+        (age < 100) ? 'Greetings!' :
+        'What an unusual age!';
+        alert( message );
+
+    </script>
+</body>
+</html>
