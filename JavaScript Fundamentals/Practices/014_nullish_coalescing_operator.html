@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+
+        let a = 2;
+        // The next two lines are the same
+        alert( a ?? b ); // a
+        alert((a !== null && a !== undefined)? a : b); // a
+
+        let firstname =  null;
+        let lastname = null;
+        let nickname = "SuperCoder";
+
+        alert( firstname ?? lastname ?? nickname ?? "Anonymus"); // Supercoder
+
+
+        // COMPARISON WITH "||"
+
+        let height = null;
+
+        alert( height ?? 100 ); // 100
+
+        height = 0;
+
+        // Here, height || 100 treats zero height as unset, same as null,
+        // undefined or any other falsy value.
+        alert(height || 100); // 100
+
+        // The height ?? 100 returns 100 only if height is exactly null
+        // or undefined. So the alert shows the height value 0 “as is”.
+        alert(height ?? 100); // 0
+
+
+        // PROCEDENCE
+
+        // So ?? is evaluated after most other operations, but before = and ?.
+
+        let height2 = null;
+        let width2 = null;
+
+        // important: use parentheses
+        let area = (height2 ?? 100) * (width2 ?? 50);
+        alert(area); // 5000
+
+        // Otherwise, if we omit parentheses,
+        // * has the higher precedence than ?? and would run first.
+
+        // --- let x = 1 && 2 ?? 3; // Syntax error
+
+    </script>
+</body>
+</html>
