@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        // OR "||"
+
+        // We can pass more conditions
+        let hour = 12;
+        let isWeekend = true;
+
+        if (hour < 10 || hour > 18 || isWeekend) {
+            alert( 'The office is closed.' ); // it is the weekend
+        }
+
+        // a chain of OR "||" returns the first truthy value or
+        // the last one if no truthy value is found.
+
+        // 1. Getting the first truthy value from a list of variables or expressions
+        let firstName = "";
+        let lastName = "";
+        let nickName = "SuperCoder";
+
+        alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder
+
+        // 2. Short-circuit evaluation
+        true || alert("not printed"); // doesn't show "alert"
+        false || alert("printed"); // shows alert
+
+
+        // AND "&&"
+
+        // Finds the first falsy value
+
+        // if the first operand is truthy,
+        // AND returns the second operand:
+        alert( 1 && 0 ); // 0
+        alert( 1 && 5 ); // 5 
+
+        alert( 1 && 4 && 0);// 0 
+
+        // if the first operand is falsy,
+        // AND returns it. The second operand is ignored        
+        alert( null && 5 ); // null
+        alert( 0 && "no matter what" ); // 0
+
+        // When all values are truthy, the last value is returned
+        alert( 1 && 2 && 3 ); // 3, the last one
+
+
+        // NOT "!"
+
+        alert( !true ); // false
+        alert( !0 ); // true
+
+        // A double NOT !! is sometimes used for converting a value to boolean type
+        alert( !!"non-empty string" ); // true
+        alert( !!null ); // false
+
+    </script>
+</body>
+</html>
